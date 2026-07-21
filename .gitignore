@@ -6,6 +6,7 @@ Frontend/dist/
 Backend/target/
 
 # Local application configuration
+Backend/src/main/resources/application-cloud.properties
 Backend/src/main/resources/application-local.properties
 
 # Environment files
