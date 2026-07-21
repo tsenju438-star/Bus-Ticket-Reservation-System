@@ -1,0 +1,34 @@
+.Intro{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 500px;
+}
+
+.right{
+    width:40%;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.right>h3>span{
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+.right>h1{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+
+.left>img{
+    width:80%;
+    border-radius: 1rem;
+}

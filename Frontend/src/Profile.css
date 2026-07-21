@@ -1,0 +1,31 @@
+.profileicon {
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.profileicon:hover{
+    transform: scale(2);
+}
+
+.profilecard{
+    height:150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    color:white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    position:absolute;
+    top:90px;
+    right:110px;
+}
+
+.profilecard button{
+    padding:0.5rem;
+    color:white;
+    background-color: black;
+    border-radius: 0.5rem;
+}

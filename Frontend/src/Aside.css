@@ -1,0 +1,39 @@
+.aside{
+    margin-top: 50px;
+    padding:2rem;
+    height:300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.aside>section>img{
+    height:3rem;
+    width: 3rem;
+    border:1px solid white;
+    padding:1rem;
+    box-sizing: content-box;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.aside>section{
+    width:30%;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    border:1px solid grey;
+    border-radius: 1rem;
+    line-height: 1.5rem;
+}
+
+.aside p{
+    text-align: start;
+}
+
+.aside>section:hover{
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}

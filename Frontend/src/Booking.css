@@ -1,0 +1,180 @@
+/* -------------------- Global -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 35px 0;
+    font-size: 2.6rem;
+    color: #38bdf8;
+}
+
+/* -------------------- Layout -------------------- */
+
+.booking {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* -------------------- Bus Section -------------------- */
+
+.bus-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.businfo {
+    background: #1e293b;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
+    transition: .3s;
+}
+
+.businfo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .45);
+}
+
+.businfo h2 {
+    text-align: center;
+    color: #22d3ee;
+    margin-bottom: 25px;
+}
+
+.businfo p {
+    margin: 18px 0;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* -------------------- Booking Form -------------------- */
+
+.book h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.book form {
+    background: #1e293b;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    transition: .3s;
+}
+
+.book form:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.45);
+}
+
+/* -------------------- Inputs -------------------- */
+
+.book input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: #334155;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: .3s;
+}
+
+.book input::placeholder {
+    color: #cbd5e1;
+}
+
+.book input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56,189,248,.5);
+}
+
+/* -------------------- Gender -------------------- */
+
+.book section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    padding: 15px;
+    border-radius: 10px;
+    background: #334155;
+}
+
+.book section label {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.book input[type="radio"] {
+    width: auto;
+}
+
+/* -------------------- Button -------------------- */
+
+.book button {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg,#16a34a,#22c55e);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.book button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg,#22c55e,#16a34a);
+    box-shadow: 0 10px 20px rgba(34,197,94,.4);
+}
+
+.book button:active {
+    transform: scale(.98);
+}
+
+/* -------------------- Responsive -------------------- */
+
+@media (max-width: 900px) {
+
+    .booking {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .businfo,
+    .book form {
+        padding: 25px;
+    }
+}

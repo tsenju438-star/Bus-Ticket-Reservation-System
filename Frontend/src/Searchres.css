@@ -1,0 +1,35 @@
+.container{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    row-gap: 1rem;
+    border:1px solid grey;
+    border-radius: 10px;
+}
+
+.buscard{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.buscard button{
+    padding:0.5rem;
+    background-color: white;
+    font-weight: 900;
+    color:black;
+    border-radius: 10px;
+}
+
+.buscard button:hover{
+    background-color: blue;
+    color:white;
+}

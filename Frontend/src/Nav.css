@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section>h1{
+    color:white;
+}
+
+.Nav{
+    height:100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :2rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.Nav img{
+    height:50px;
+    width:50px;
+    border-radius: 0.5rem;
+}
+
+.Nav a{
+    text-decoration: none;
+    color:white;
+}
+
+.Nav .section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav .section1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem
+}
+
+.section>h1{
+    font-size: 2rem;
+}
+
+.Nav a:hover{
+    transition: ease-in-out 2s;
+    background-color: white;
+    color:black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.after{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:1rem;
+}

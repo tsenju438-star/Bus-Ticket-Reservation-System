@@ -1,0 +1,43 @@
+.search>form{
+    height:150px;
+    border:1px solid gray;
+    border-radius: 10px;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search>form>section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1rem;
+}
+
+.search label{
+    font-size: 1.2rem;
+}
+
+.search input{
+    padding:1rem;
+    height:2rem;
+}
+
+.search>form button{
+    margin-top: 2.5rem;
+    height: 3rem;
+    padding:1rem;
+    color: white;
+    background-color: blue;
+    border:none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.search>form button:hover{
+    transform: scale(1.2);
+}

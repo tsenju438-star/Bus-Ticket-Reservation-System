@@ -1,0 +1,117 @@
+/* Mybooking.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mybook {
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #eef2ff, #dbeafe); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.mybookings {
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    padding: 35px;
+    animation: fadeIn 0.5s ease;
+}
+
+.mybookings ul {
+    list-style: none;
+}
+
+.mybookings ul div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.mybookings ul div:last-of-type {
+    border-bottom: none;
+}
+
+.mybookings li:first-child {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.mybookings li:last-child {
+    color: #111827;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mybookings button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #ef4444;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mybookings button:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.mybookings button:active {
+    transform: scale(0.98);
+}
+
+.mybook > div:last-child {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    font-size: 22px;
+    font-weight: 600;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .mybookings {
+        padding: 20px;
+    }
+
+    .mybookings ul div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 12px 0;
+    }
+
+    .mybookings button {
+        font-size: 15px;
+    }
+}

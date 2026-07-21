@@ -1,0 +1,23 @@
+# React
+Frontend/node_modules/
+Frontend/dist/
+
+# Spring Boot
+Backend/target/
+
+# Local application configuration
+Backend/src/main/resources/application-local.properties
+
+# Environment files
+.env
+*.env
+
+# IDE
+.idea/
+.vscode/
+
+# Java
+*.class
+
+# Logs
+*.log
